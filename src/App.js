@@ -1,6 +1,9 @@
+import { useDarkMode } from './hooks';
 import { Lightning } from './icons';
 
 function App() {
+  const [darkMode, setDarkMode] = useDarkMode();
+
   return (
     <div className="h-screen flex flex-col justify-center items-center space-y-9 p-6">
       <div className="text-center space-y-3">
